@@ -1,0 +1,395 @@
+/*---------------------------------------- Page CSS ----------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+      
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    
+    &:hover {
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    
+    &:active {
+      background-color: #eeeeee;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 
+        0 -1px 0 rgba(0, 0, 0, .04),
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 0 0 3px #c8dafc;
+    }
+    
+    &:disabled {
+      filter: grayscale(100%);
+      background-color: #ebebeb;
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+      cursor: not-allowed;
+    }
+  }
+  
+  body {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+
+.background-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.collegepravesh.com/2022/05/TCE-Madurai.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.6; 
+    z-index: -1; 
+}
+
+/*---------------------------------------- Header CSS ----------------------------------------*/
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+header {
+    display: flex;
+    padding: 20px 0;
+    background-color: #800404; 
+    color: white; 
+    margin-top:0px;
+}
+
+#table-container {
+    width: 100%; 
+    margin: 20px auto;
+}
+
+#month-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top:90px;
+}
+#current-month
+{
+    font-size:20px;
+}
+#month-navigation button {
+    background-color: #b8c8bb; /* Blue background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#month-navigation button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+#timetable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 120px;
+    margin-top: 50px;
+    background-color: white; 
+}
+
+
+#club-table {
+    width: 40%; 
+    border-collapse: collapse;
+    margin-top:90px; 
+}
+
+#timetable th, #timetable td, #club-table th, #club-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#timetable th, #club-table th {
+    background-color: #f2f2f2;
+}
+
+
+/*---------------------------------------- Clubs button CSS ----------------------------------------*/
+#clubs {
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+#clubs.IOT {
+    background-color: #4285F4;
+    font-size: large; /* Green */
+}
+#clubs.CODERS {
+    background-color:#DB4437; /* Blue */
+    font-size: large;
+}
+#clubs.APP-DEVELOPMENT {
+    background-color: #F4B400;/* Red */
+    font-size: large;
+}
+#clubs.TAMIL-MANDRAM {
+    background-color: #0F9D58; /* Yellow */
+    font-size: large;
+}
+#clubs.ENGLISH-CLUB {
+    background-color:#4285F4; /* Teal */
+    font-size: large;
+}
+#clubs.BUILD-CLUB {
+    background-color:#DB4437; /* Gray */
+    font-size: large;
+}
+#clubs.ELIXR {
+    background-color:  #0F9D58;  /* Blue */
+    font-size: large;
+}
+#clubs.INFINIX {
+    background-color: #F4B400;/* Orange */
+    font-size: large;
+}
+
+/*---------------------------------------- Clubs Menu CSS ----------------------------------------*/
+.floating-list1 {
+    padding: 10px;
+    border-radius: 5px;
+    width:100%;
+    font-size:30px;
+}
+.floating-list1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.floating-list1 li {
+    width: 90%;
+}
+#club-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: 40px;
+}
+
+#clubs {
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Add a transition effect on hover */
+#clubs:hover {
+    transform: scale(1.1); /* Increase the size slightly on hover */
+}
+
+/* Define specific styles for each club button on hover */
+#clubs.IOT:hover {
+    background-color: #4285F4;
+}
+
+#clubs.CODERS:hover {
+    background-color:  #DB4437;
+}
+
+#clubs.APP-DEVELOPMENT:hover {
+    background-color:#F4B400;
+}
+
+#clubs.TAMIL-MANDRAM:hover {
+    background-color:#0F9D58;
+}
+
+#clubs.ENGLISH-CLUB:hover {
+    background-color: #4285F4;
+}
+
+#clubs.BUILD-CLUB:hover {
+    background-color: #DB4437;
+}
+
+#clubs.INFINIX:hover {
+    background-color: #F4B400;
+}
+
+#clubs.ELXIR:hover {
+    background-color: #0F9D58;
+}
+
+
+/*---------------------------------------- Footer CSS ----------------------------------------*/
+footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #800404;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/*---------------------------------------- Social Media CSS ----------------------------------------*/
+.social-floating-list {
+    position: sticky;
+    bottom: 0;
+    background-color: #FFF3F3;
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    margin-bottom:0px;
+    margin-top:10px;
+    justify-content: center; 
+}
+.social-floating-list li {
+    margin-right: 15px;
+}
+.social-floating-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.social-floating-list a {
+    text-decoration: none;
+    color:black; 
+    font-weight: bold;
+    font-size: 16px;
+}
+.social-icon img {
+    width: 24px;
+    height: 24px; 
+}
+
+
+/*---------------------------------------- Calendar and event CSS ----------------------------------------*/
+
+#table-container {
+    max-width: 2000px; 
+    margin: 20px auto;
+}
+#month-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top:90px;
+}
+#event-table {
+    margin-left: 250px;
+    margin-top: 10px;
+    width: 500px;
+    border-collapse: collapse;
+}
+#event-table th, #event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+#event-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+#event-table tbody td {
+    background-color: #e2e2e2; /* Change to a different color */
+}
+
+.event-button {
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+#all-events-label {
+    display: block;
+    margin-left: 250px;
+    width: 500px;
+    padding: 8px;
+    background-color:rgb(56, 151, 64);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col-md-7 {
+    flex: 0 0 70%; 
+}
+
+.col-md-3 {
+    flex: 0 0 30%; 
+    padding-left: 15px;
+}
+
+#month-navigation {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+#timetable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 120px;
+    margin-top:50px;
+}

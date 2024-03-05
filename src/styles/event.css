@@ -1,0 +1,131 @@
+.eventcontainer {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.eventcontainer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.eventcontainer label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.eventcontainer select,
+.eventcontainer input,
+.eventcontainer textarea {
+  width: 98%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.eventcontainer button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;    
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 88%;
+}
+
+.eventcontainer button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+}
+
+/* UpdateEvent Container */
+.updateeventcontainer {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.updateeventcontainer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.updateeventcontainer label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.updateeventcontainer select,
+.updateeventcontainer input,
+.updateeventcontainer textarea {
+  width: 98%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.updateeventcontainer button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 88%;
+}
+
+.updateeventcontainer button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+}
+
+/* DeleteEvent Container */
+.delete-event-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.delete-event-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.delete-event-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.delete-event-container select
+  {
+  width: 98%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.delete-event-container button {
+background-color: #007bff; /* Red color for delete button */
+color: #fff;
+padding: 10px 15px; /* Adjust the padding as needed */
+font-size: 18px; /* Adjust the font size as needed */
+cursor: pointer;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+margin-left: 88%; /* Adjust the margin as needed */
+}
+
+.delete-event-container button:hover {
+background-color: #0056b3; /* Darker red on hover */
+transform: scale(1.1); /* Enlarge by 10% */
+}
+
+

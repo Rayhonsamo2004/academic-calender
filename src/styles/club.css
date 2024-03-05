@@ -1,0 +1,42 @@
+.clubcontainer {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .clubcontainer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .clubcontainer label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .clubcontainer select,
+  .clubcontainer input,
+  .clubcontainer textarea {
+    width: 98%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .clubcontainer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 90%;
+  }
+  
+  .clubcontainer button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Enlarge by 10% */
+  }

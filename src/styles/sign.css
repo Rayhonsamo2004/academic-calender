@@ -1,0 +1,235 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Make the body a flex container with column direction */
+}
+
+.content {
+    flex-grow: 1; /* Make the content section grow to fill the remaining space */
+}
+
+    #card-div
+    {
+        margin-top:100px;
+    }
+    .card1 {
+    margin-left: 40vh;
+    margin-top: 20px;
+    background-color: white;
+    height: auto; /* Decreased height to fit the image */
+    width: 960px;
+    position: relative;
+    opacity: 1.0; /* Increased opacity */
+
+
+}
+
+.card2 {
+    margin: 20px auto; /* Added auto for centering */
+    margin-top: 20px;
+    background-color: white;
+    height: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    margin-left:100px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container label {
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+  }
+  
+form {
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f5f5f5;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+form input[type="submit"]:hover {
+  background: #0155ae;
+}
+
+.htext{
+position: absolute;
+top:20%;
+left: 5%;
+max-width: 600px;
+color: white;
+}
+.htext h1{
+font-size: 2em;
+}
+.htext h2{
+font-size: 4em;
+}
+.htext span{
+color: #e84393;
+}
+.htext p{
+margin: 15px 0;
+line-height: 2em;
+}
+.htext a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+border:1px solid white;
+letter-spacing: 2px;
+border-radius: 8px;
+transition: 0.4s;
+}
+
+.htext a:hover{
+background: #e84393;
+}
+@media screen and (max-width:700px) {
+.body{
+    padding:1rem;
+}
+}
+
+.btn {
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 5px; /* Adjust margin as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+  }
+  
+  /* Primary button style */
+  .btn-outline-primary {
+    color: #007bff; /* Text color */
+    border: 2px solid #007bff; /* Border color */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  /* Danger button style */
+  .btn-outline-danger {
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    background-color: transparent;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Success button style */
+  .btn-outline-success {
+    color: #28a745;
+    border: 2px solid #28a745;
+    background-color: transparent;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    transform: scale(1.1); 
+  }
+  .create-club:hover{
+    transform: scale(1.4); 
+  }
+  .update-club:hover{
+    transform: scale(1.4); 
+  }
+  .delete-club:hover{
+    transform: scale(1.4); 
+  }
+.google-signin-button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  margin-top: -10%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s;
+
+}
+
+.google-signin-button img {
+    max-height: 30px; /* Set the maximum height for the Google logo */
+    margin-right: 10px;
+    max-width:30px;
+}
+
+.google-signin-button:hover {
+  background: #0155ae;
+}
+.small-card {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    height:50%;
+  }
+  .card1 .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+  }
+  
